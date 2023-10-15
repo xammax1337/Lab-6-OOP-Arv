@@ -10,7 +10,7 @@ namespace Lab_6___OOP_Arv
     {
         public int Bananas { get; set; } //Set how many banans they eat per day
 
-        public Ape(bool hasTail, string specie, string gender, int age, string habitat, int bananas) : base (hasTail, "Ape", gender, age, "Jungle")
+        public Ape(bool hasTail, string gender, int age, int bananas) : base (hasTail, "Ape", gender, age, "Jungle")
         {
             Bananas = bananas;
         }

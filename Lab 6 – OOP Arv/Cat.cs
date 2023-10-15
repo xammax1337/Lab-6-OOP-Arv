@@ -8,20 +8,19 @@ namespace Lab_6___OOP_Arv
 {
     internal class Cat : Animal
     {
-        public bool CatRace { get; set; }
-        public Cat(bool hasTail, string specie, string gender, int age, string habitat, bool catRace) : base(hasTail, specie, gender, age, habitat)
+        public bool OutsideCat { get; set; }
+        public Cat(bool hasTail, string gender, int age, bool outsideCat) : base(hasTail, "Cat", gender, age, "Anywhere")
         {
-            CatRace = catRace;
+            OutsideCat = outsideCat;
         }
 
         public void Hunting()
         {
-            Console.WriteLine($"The {CatRace} is on a hunt");
+            Console.WriteLine($"The {Specie} is on a hunt");
         }
         public void MakeSound()
         {
             Console.WriteLine("Meow!");
         }
     }
-}
 }

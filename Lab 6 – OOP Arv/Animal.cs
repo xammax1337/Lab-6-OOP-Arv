@@ -18,6 +18,7 @@ namespace Lab_6___OOP_Arv
 
         public string Habitat { get; set; }
 
+        //All the base traits animals should have
         public Animal(bool hasTail, string specie, string gender, int age, string habitat ) 
         {
             HasTail = hasTail;
@@ -26,7 +27,7 @@ namespace Lab_6___OOP_Arv
             Age = age;
             Habitat = habitat;
         }
-
+        //Methods for all animals
         public void Sleeping()
         {
             Console.WriteLine($"The {Specie} is sleeping. zzz ZZZ");
